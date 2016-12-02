@@ -33,6 +33,7 @@ var UserSchema = new Schema({
       }
     }
   },
+  events: [String],
   provider: String,
   salt: String,
   facebook: {},
