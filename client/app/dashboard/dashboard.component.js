@@ -7,8 +7,13 @@ import routes from './dashboard.routes';
 
 export class DashboardComponent {
   /*@ngInject*/
-  constructor() {
-    this.message = 'Hello';
+  constructor(flowService) {
+    this.flows = {};
+    this.flowService = flowService;
+  }
+  
+  getFlow() {
+
   }
 }
 
