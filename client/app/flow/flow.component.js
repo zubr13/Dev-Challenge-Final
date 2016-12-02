@@ -9,10 +9,12 @@ export class FlowComponent {
   /*@ngInject*/
   constructor(flowService, $stateParams, $state) {
     this.flow = {};
+    this.event = {};
     this.flowService = flowService;
     this.$stateParams = $stateParams;
     this.$state = $state;
     this.getFlow();
+    this.showEventForm = false;
   }
 
   getFlow() {
@@ -22,9 +24,15 @@ export class FlowComponent {
   }
 
   createEvent() {
-    this.flowService.createEvent(this.$stateParams.id).then(event => {
-      this.$state.go('event', { id: event._id });
+    console.log(this.$stateParams.id);
+    this.flow.events.push(this.event);
+    this.flowService.createEvent(this.$stateParams.id, this.flow).then(flow => {
+      return;
     })
+  }
+
+  getShowEventForm() {
+    this.showEventForm = !this.showEventForm;
   }
 }
 
