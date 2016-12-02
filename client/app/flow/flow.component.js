@@ -7,8 +7,9 @@ import routes from './flow.routes';
 
 export class FlowComponent {
   /*@ngInject*/
-  constructor(flowService, $stateParams, $state) {
+  constructor(flowService, $stateParams, $state, Auth) {
     this.flow = {};
+    this.user = Auth.getCurrentUserSync();
     this.event = {};
     this.flowService = flowService;
     this.$stateParams = $stateParams;
@@ -20,15 +21,17 @@ export class FlowComponent {
   getFlow() {
     this.flowService.getFlow(this.$stateParams.id).then(flow => {
       this.flow = flow;
+      this.flow.users.push(this.user);
     });
   }
 
   createEvent() {
-    console.log(this.$stateParams.id);
+    this.showEventForm = false;
     this.flow.events.push(this.event);
     this.flowService.createEvent(this.$stateParams.id, this.flow).then(flow => {
       return;
     })
+    this.event = {};
   }
 
   getShowEventForm() {

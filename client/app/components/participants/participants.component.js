@@ -11,7 +11,7 @@ export class participantsComponent {
 export default angular.module('devChallengeFinalApp.participants', [])
   .component('participants', {
     template: require('./participants.component.html'),
-    bindings: { message: '<' },
+    bindings: { participants: '<' },
     controller: participantsComponent
   })
   .name;
