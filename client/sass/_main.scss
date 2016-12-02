@@ -1,11 +1,7 @@
 @import "variables";
 
 body {
-  padding-top: $header-height;
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-  color: $gray-dark;
-  background-color: $body-bg-base;
+  color: white;
 }
 
 a:hover {

@@ -4,12 +4,11 @@
     <button class="btn block" ui-sref='create-flow'>CREATE NEW ROOM</button>
   </div>
 </header>
-<chat></chat>
-<section class="thumbnails container">
-  <div ng-repeat='flow in $ctrl.flows'>
-    <a ui-sref='flow({id: flow._id})'>
-      <img ng-src="{{flow.img}}" alt=""/>
-      <h3>Lorem ipsum dolor sit amet</h3>
-    </a>
-  </div>
-</section>
+  <section class="thumbnails container">
+    <div ng-repeat='flow in $ctrl.flows'>
+      <a ui-sref='flow({id: flow._id})'>
+        <img ng-src="{{flow.img}}" alt=""/>
+        <h3>Lorem ipsum dolor sit amet</h3>
+      </a>
+    </div>
+  </section>
