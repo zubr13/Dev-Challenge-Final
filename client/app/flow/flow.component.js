@@ -8,11 +8,11 @@ import routes from './flow.routes';
 export class FlowComponent {
   /*@ngInject*/
   constructor() {
-    this.message = 'Hello';
+    this.flow = {};
   }
 
-  getFlow(){
-    
+  getFlow() {
+
   }
 }
 

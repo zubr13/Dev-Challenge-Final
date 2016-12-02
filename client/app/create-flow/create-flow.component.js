@@ -7,12 +7,12 @@ import routes from './create-flow.routes';
 
 export class CreateFlowComponent {
   /*@ngInject*/
-  constructor() {
-
+  constructor(flowService) {
+    this.flowService = flowService;
   }
 
   createFlow(){
-    
+    this.flowService.createFlow();
   }
 }
 

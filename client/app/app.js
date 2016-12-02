@@ -26,12 +26,13 @@ import main from './main/main.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
-import flow from './flow/flow.component';
 import createFlow from './create-flow/create-flow.component';
+import flow from './flow/flow.component';
+import flowService from './flow.service';
 import './app.scss';
 
 angular.module('devchallengeApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
-    uiBootstrap, _Auth, account, admin, navbar, footer, main, constants, socket, util, flow, createFlow
+    uiBootstrap, _Auth, account, admin, navbar, footer, main, constants, socket, util, createFlow, flow
   ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
@@ -45,7 +46,8 @@ angular.module('devchallengeApp', [ngCookies, ngResource, ngSanitize, 'btford.so
         }
       });
     });
-  });
+  })
+  .service('flowService', flowService);
 
 angular.element(document)
   .ready(() => {
