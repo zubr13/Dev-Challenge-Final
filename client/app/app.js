@@ -49,6 +49,6 @@ angular.module('devchallengeApp', [ngCookies, ngResource, ngSanitize, 'btford.so
 angular.element(document)
   .ready(() => {
     angular.bootstrap(document, ['devchallengeApp'], {
-      strictDi: true
+      strictDi: false
     });
   });
