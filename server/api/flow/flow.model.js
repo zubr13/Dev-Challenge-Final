@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 var FlowSchema = new mongoose.Schema({
   name: String,
   description: String,
+  img: String,
   private: Boolean,
   img: String,
   delete: Boolean,

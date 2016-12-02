@@ -1,1 +1,16 @@
-<div>This is the dashboard view.</div>
+
+
+<section class="thumbnails container">
+  <div ng-repeat="event in dashboardCtrl.events">
+          <a ui-sref='event({id: event._id})'>
+          <img ng-src="{{event.img}}" alt="event image">
+              <h3>{{event.name}}</h3>
+        <h6>{{event.place}}
+            {{event.price}}
+        </h6>
+                <span ng-repeat="hashtag in event.hashtags">
+            {{hashtag}}
+        </span>
+    </a>
+</div>
+</section>
