@@ -1,0 +1,85 @@
+// Colors
+$body-bg-base: #fff;
+$gray-darker: #262626;
+$gray-dark: #333;
+$gray: #666;
+$gray-regular: #9D9D9D;
+$gray-light: #D9D9D9;
+$gray-lighter: #F7F7F7;
+$red-dark: #8c1414;
+$red: #A81817;
+$red-light: #b82121;
+$cyan-dark: #168c8c;
+$cyan: #19A3A3;
+$cyan-light: #24b3b3;
+$white: #fff;
+$red-light-transparent: rgba(168, 24, 23, 0.05);
+
+// Fonts
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-small: 12px;
+$font-size-base: 14px;
+$font-size-base-big: 16px;
+$font-size-base-bigger: 18px;
+
+// Borders
+$border-thin-light: 1px solid $gray-light;
+$border-thin-regular: 1px solid $gray;
+$border-thin-cyan-dark: 1px solid $cyan-dark;
+
+// Shadows
+$shadow-light: 0px 1px 7px 0px rgba(0, 0, 0, 0.07);
+
+// Dimensions
+$side-padding: 15px;
+$header-height: 37px;
+$border-radius-small: 3px;
+$size-base: 100px;
+$size-big: 250px;
+$size-bigger: 450px;
+$width-full: 100%;
+$space-base: 20px;
+$space-small: 10px;
+$space-big: 40px;
+$padding-inside-form: 40px 15%;
+$padding-inside-input: 10px 5px 10px 5px;
+$padding-for-mobile: 0 15px 0 15px;
+$padding-inside-button: 10px 20px 10px 20px;
+$margin-inside-form: 50px 85px 50px 85px;
+$code-btn-margin: 20px;
+$btn-margin: 20px 0 10px 0;
+$btn-padding: 10px 30px 10px 30px;
+$btn-width: 100px;
+
+// Transitions
+$transition-ease-fast: 0.1s ease;
+$transition-ease-normal: 0.2s ease;
+
+// Overlay
+$opacity-normal: 0.7;
+
+//Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
