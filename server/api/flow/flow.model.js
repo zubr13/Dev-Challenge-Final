@@ -13,12 +13,12 @@ var FlowSchema = new mongoose.Schema({
   msg: [{
     user: String,
     msg: String,
-    date: Date
+    date: {type: Date, default: Date.now}
   }],
   events: [{
     name: String,
     description: String,
-    date: Date,
+    date: {type: Date, default: Date.now},
     place: String,
     price: String,
     img: String,

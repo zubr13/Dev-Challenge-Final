@@ -193,7 +193,7 @@ Flow.find({}).remove()
       delete: false,
       users: ['Admin', 'Vasya Pupkin'],
       msg: [{
-        user: '',
+        user: 'Admin',
         msg: 'Hello everyone'
       }],
       events: [{

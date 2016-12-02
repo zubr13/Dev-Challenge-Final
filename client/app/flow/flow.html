@@ -3,9 +3,11 @@
   <div class="flex">
     <div class="flex-column">
       <h1>{{flowCtrl.flow.name}}</h1>
+      <img ng-src="{{flowCtrl.flow.img}}" alt="" height="300">
       <h2>{{flowCtrl.flow.description}}</h2>
-      <h3>{{flowCtrl.flow.private}}</h3>
+      <h3>Private: {{flowCtrl.flow.private ? 'Yes' : 'No'}}</h3>
     </div>
     <chat flow="flowCtrl.flow"></chat>
   </div>
+  <button class="btn">Create event</button>
 </div>
