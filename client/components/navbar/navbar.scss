@@ -16,3 +16,42 @@
   float: left;
 }
 
+li{
+  list-style: none;
+}
+
+.navbar-header{
+  float: left;
+  display: inline-block;
+}
+
+.navbar-collapse{
+  float: right;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: flex-end;
+}
+
+.auth{
+  display: flex;
+  flex-direction: row;
+  line-height: 50px;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.auth button.btn{
+  height: 30px;
+}
+
+li{
+  margin: 0;
+}
+
+ul.nav{
+  margin-right: 40px;
+  li{
+    text-decoration: dotted;
+  }
+}
