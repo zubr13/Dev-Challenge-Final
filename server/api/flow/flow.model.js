@@ -9,7 +9,7 @@ var FlowSchema = new mongoose.Schema({
   private: Boolean,
   img: String,
   delete: Boolean,
-  users: [String],
+  users: [{name: String}],
   msg: [{
     user: String,
     msg: String,

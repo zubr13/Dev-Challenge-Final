@@ -1,4 +1,4 @@
-<div class="user" ng-repeat='participant in $ctrl.participants'>
+<div class="user" ng-repeat='participant in $ctrl.participants track by $index'>
 	<img src="https://cdn3.iconfinder.com/data/icons/gray-user-toolbar/512/manager-512.png">
-	<h3>{{participant.name || participant}}</h3>
+	<h3>{{participant.name}}</h3>
 </div>

@@ -10,4 +10,20 @@
     </div>
     <chat flow="flowCtrl.flow"></chat>
   </div>
+  <h1>Events</h1>
+  <section class="thumbnails container">
+    <div ng-repeat="event in flowCtrl.flow.events">
+      <a ui-sref='event({id: event._id})'>
+        <img ng-src="{{event.img}}" alt="event image">
+        <h3>{{event.name}}</h3>
+        <h3>{{event.place}}
+          {{event.price}}
+        </h3>
+                  <span class="hashtag" ng-repeat="hashtag in event.hashtags">
+              {{hashtag}}
+          </span>
+      </a>
+    </div>
+  </section>
+
 </div>
