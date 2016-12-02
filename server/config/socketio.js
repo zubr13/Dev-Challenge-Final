@@ -16,6 +16,7 @@ function onConnect(socket) {
   });
 
   // Insert sockets below
+  require('../api/flow/flow.socket').register(socket);
   require('../api/thing/thing.socket').register(socket);
 }
 
@@ -48,6 +49,12 @@ export default function(socketio) {
     socket.on('disconnect', () => {
       onDisconnect(socket);
       socket.log('DISCONNECTED');
+    });
+
+    socket.on('chat message', function(msg){
+      console.log(msg);
+      
+      socketio.emit('chat message', msg);
     });
 
     // Call onConnect.
