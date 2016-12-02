@@ -1,15 +1,14 @@
 <header class="container-fluid">
-  <a href="#"><span class="avatar"><img src="images/avatar.jpg"> </span></a>
+  <a href="#"><span class="avatar"><img src="../../images/avatar.jpg"> </span></a>
   <div class="menu">
     <button class="btn block" ui-sref='create-flow'>CREATE NEW ROOM</button>
   </div>
 </header>
-<h1>Public rooms</h1>
-<section class="thumbnails container">
-  <div ng-repeat='flow in $ctrl.flows'>
-    <a ui-sref='flow({id: flow._id})'>
-      <img ng-src="{{flow.img}}" alt=""/>
-      <h3>{{flow.name}}</h3>
-    </a>
-  </div>
-</section>
+  <section class="thumbnails container">
+    <div ng-repeat='flow in $ctrl.flows'>
+      <a ui-sref='flow({id: flow._id})'>
+        <img ng-src="{{flow.img}}" alt=""/>
+        <h3>Lorem ipsum dolor sit amet</h3>
+      </a>
+    </div>
+  </section>
