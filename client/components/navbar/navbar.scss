@@ -1,7 +1,18 @@
+.navbar{
+  height: 50px;
+}
 .auth{
 	float: right;
 }
 
 .navbar-brand{
 	font-size: 20px;
+  display: inline-block;
+  float: left;
 }
+
+.logo{
+  display: inline-block;
+  float: left;
+}
+
