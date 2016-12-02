@@ -31,11 +31,12 @@ import flow from './flow/flow.component';
 import dashboard from './dashboard/dashboard.component';
 import event from './event/event.component';
 import flowService from './flow.service';
+import participants from './components/participants/participants.component';
 import './app.scss';
 
 angular.module('devchallengeApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
     uiBootstrap, _Auth, account, admin, navbar, footer, main, constants, socket, util, createFlow, flow,
-    dashboard, event
+    dashboard, participants, event
   ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

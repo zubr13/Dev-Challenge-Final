@@ -1,10 +1,11 @@
 <div class="container">
+  <participants></participants>
   <div class="flex">
     <div class="flex-column">
       <h1>{{flowCtrl.flow.name}}</h1>
       <h2>{{flowCtrl.flow.description}}</h2>
       <h3>{{flowCtrl.flow.private}}</h3>
     </div>
-    <chat></chat>
+    <chat flow="flowCtrl.flow"></chat>
   </div>
 </div>
