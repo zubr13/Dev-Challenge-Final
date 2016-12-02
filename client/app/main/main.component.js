@@ -6,13 +6,17 @@ import chat from '../chat/chat.component';
 export class MainController {
 
   /*@ngInject*/
-  constructor($http, $scope, socket) {
+  constructor($http, $scope, socket, flowService) {
     this.$http = $http;
     this.socket = socket;
+    this.flowService = flowService;
 
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates('thing');
     });
+
+    this.flows = [];
+    this.getFlows();
   }
 
   $onInit() {
@@ -21,6 +25,12 @@ export class MainController {
         this.awesomeThings = response.data;
         this.socket.syncUpdates('thing', this.awesomeThings);
       });
+  }
+
+  getFlows(){
+    this.flowService.getFlows().then(flows => {
+      this.flows = flows;
+    })
   }
 
   addThing() {
