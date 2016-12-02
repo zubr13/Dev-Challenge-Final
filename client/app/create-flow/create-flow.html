@@ -1,21 +1,23 @@
-<div>
-	<label for="">Name of flow</label>
-	<input type="text" ng-model="createFlowCtrl.flow.name">
-</div>
+<div class="container-fluid">
+  <div>
+    <label for="name">Name of flow</label><br><br>
+    <input type="text" ng-model="createFlowCtrl.flow.name" id="name">
+  </div>
 
-<div>
-	<label for="">Description</label>
-	<input type="text" ng-model="createFlowCtrl.flow.description">
-</div>
+  <div>
+    <label for="descript">Description</label><br><br>
+    <input type="text" ng-model="createFlowCtrl.flow.description" id="descript">
+  </div>
 
-<div>
-	<label for="">Private?</label>
-	<input type="checkbox" ng-model="createFlowCtrl.flow.private">
-</div>
+  <div>
+    <label for="private">Private?</label>
+    <input type="checkbox" ng-model="createFlowCtrl.flow.private" id="private">
+  </div>
+  <br>
+  <div>
+    <label for="img">Image url</label><br><br>
+    <input type="text" ng-model="createFlowCtrl.flow.img" id="img">
+  </div>
 
-<div>
-	<label for="">Image url</label>
-	<input type="text" ng-model="createFlowCtrl.flow.img">
+  <button class="btn" ng-click='createFlowCtrl.createFlow()'>Create</button>
 </div>
-
-<button ng-click='createFlowCtrl.createFlow()'>Create</button>

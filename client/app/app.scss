@@ -1,11 +1,74 @@
 @import "../sass/core";
 
-body{
+body {
   background: url("../images/bg.jpg") top center;
   background-size: cover;
 }
 
+.nav {
+  .li-item {
+    height: 70px;
+    color: $gray;
+    padding: 9px 25px;
+    font-weight: bold;
+  }
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  background-color: white;
+  border: $border-thin-light;
+  .navbar-brand {
+    padding: 10px 15px 15px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    &:hover #brand {
+      color: black;
+    }
+    &:hover #logo {
+      opacity: 0.7;
+    }
+  }
+  #logo {
+    width: 50px;
+    height: 50px;
+  }
+  #brand {
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: $font-size-base-bigger;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .navbar-nav {
+    li {
+      a {
+        height: 70px;
+        color: $gray;
+        padding: 25px;
+        font-weight: bold;
+      }
+    }
+  }
+  .navbar-collapse {
+    border: none;
+  }
+  .navbar-header {
+    height: 70px;
+  }
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: $red;
+  color: white;
+}
 
 @import "main/main";
 @import "chat/chat.component";
 @import "flow/flow";
+@import "create-flow/create-flow";
