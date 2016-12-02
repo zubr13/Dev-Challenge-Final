@@ -151,6 +151,76 @@ Flow.find({}).remove()
         img: 'https://www.planet-source-code.com/vb/2010Redesign/images/LangugeHomePages/HTML5_CSS_JavaScript.png',
         hashtags: ['dsadsa', 'sadadsa'],
       }]
+    }, {
+      name: "Angular 2",
+      description: "This room for JavaScript developers, who love Angular 2",
+      private: false,
+      img: 'http://javahero.ru/wp-content/uploads/2016/06/500628_a962.jpg',
+      delete: false,
+      users: ['Admin', 'Vasya Pupkin'],
+      msg: [{
+        user: '',
+        msg: 'Hello everyone'
+      }],
+      events: [{
+        place: 'Kyiv',
+        price: '120$',
+        img: 'http://javahero.ru/wp-content/uploads/2016/06/500628_a962.jpg',
+        hashtags: ['dsadsa', 'sadadsa'], 
+      }]
+    }, {
+      name: "React",
+      description: "This room for JavaScript developers, who love React",
+      private: false,
+      img: 'http://react-etc.net/files/2016-07/logo-578x270.png',
+      delete: false,
+      users: ['Admin', 'Vasya Pupkin'],
+      msg: [{
+        user: '',
+        msg: 'Hello everyone'
+      }],
+      events: [{
+        place: 'Kyiv',
+        price: '120$',
+        img: 'http://react-etc.net/files/2016-07/logo-578x270.png',
+        hashtags: ['dsadsa', 'sadadsa'], 
+      }]
+    }, {
+      name: "Node JS",
+      description: "This room for JavaScript developers, who love Angular 2",
+      img: 'https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/07/1436439824nodejs-logo.png',
+      private: false,
+      delete: false,
+      users: ['Admin', 'Vasya Pupkin'],
+      msg: [{
+        user: '',
+        msg: 'Hello everyone'
+      }],
+      events: [{
+        name: "Event 1",
+        place: 'Kyiv',
+        price: '120$',
+        img: 'https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/07/1436439824nodejs-logo.png',
+        hashtags: ['dsadsa', 'sadadsa'], 
+      }]
+    }, {
+      name: "JavaScript",
+      description: "This room for JavaScript developers, who love JavaScript",
+      private: false,
+      delete: false,
+      img: 'https://www.planet-source-code.com/vb/2010Redesign/images/LangugeHomePages/HTML5_CSS_JavaScript.png',
+      users: ['Admin', 'Vasya Pupkin'],
+      msg: [{
+        user: '',
+        msg: 'Hello everyone'
+      }],
+      events: [{
+        name: 'Event2',
+        place: 'Kyiv',
+        price: '120$',
+        img: 'https://www.planet-source-code.com/vb/2010Redesign/images/LangugeHomePages/HTML5_CSS_JavaScript.png',
+        hashtags: ['dsadsa', 'sadadsa'], 
+      }]
     })
     .then(() => {
       console.log('finished populating users');

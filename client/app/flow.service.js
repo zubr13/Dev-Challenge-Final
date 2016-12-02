@@ -22,4 +22,9 @@ export default class FlowService {
 		return this.$http.post(`${API_URL}/flows`, flow)
 		.then(response => response.data);
 	}
+
+	saveFlow(flow){
+		return this.$http.put(`${API_URL}/flows/${flow._id}`, flow)
+		.then(response => response.data);
+	}
 }
