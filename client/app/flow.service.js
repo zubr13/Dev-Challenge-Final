@@ -33,7 +33,8 @@ export default class FlowService {
 		.then(response => console.log(response.data));
 	}
 
-	saveEventSign(eventAdd, user) {
-		this.$http.get(`${API_URL}/flows`)
+	saveEventSign(flow){
+		return this.$http.put(`${API_URL}/flows/${flow._id}`, flow)
+		.then(response => console.log(response.data));
 	}
 }

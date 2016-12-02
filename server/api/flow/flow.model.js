@@ -22,6 +22,7 @@ var FlowSchema = new mongoose.Schema({
     place: String,
     price: String,
     img: String,
+    users: [String],
     hashtags: [String]
   }]
 });
