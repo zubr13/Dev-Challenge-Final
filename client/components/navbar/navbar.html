@@ -1,5 +1,5 @@
-<div class="navbar navbar-default navbar-static-top">
-  <div class="container">
+<div class="container">
+  <div class="navbar navbar-default navbar-static-top">
     <div class="navbar-header">
       <a href="/" class="logo btn">main</a>
     </div>
@@ -8,16 +8,16 @@
         <li ng-repeat="item in $ctrl.menu" ui-sref-active="active">
           <a ui-sref="{{item.state}}">{{item.title}}</a>
         </li>
-        <li ng-show="$ctrl.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
+        <li ng-show="$ctrl.isAdmin()" ui-sref-active="active"><a ui-sref="admin" class="btn">Admin</a></li>
       </ul>
       <div class="auth">
-        <button ui-sref="dashboard" class="btn">events</button>
         <button class="btn" ng-hide="$ctrl.isLoggedIn()" ui-sref="signup">Sign up</button>
         <button class="btn" ng-hide="$ctrl.isLoggedIn()" ui-sref="login">Login</button>
         <li ng-show="$ctrl.isLoggedIn()"><p class="navbar-text">Hello {{ $ctrl.getCurrentUser().name }}</p></li>
         <li ng-show="$ctrl.isLoggedIn()" ui-sref-active="active"><a ui-sref="settings"><span
           class="glyphicon glyphicon-cog"></span></a></li>
-        <li ng-show="$ctrl.isLoggedIn()"><a ui-sref="logout">Logout</a></li>
+        <button ui-sref="dashboard" class="btn">events</button>
+        <li ng-show="$ctrl.isLoggedIn()"><a class="btn" ui-sref="logout">Logout</a></li>
       </div>
     </div>
   </div>
