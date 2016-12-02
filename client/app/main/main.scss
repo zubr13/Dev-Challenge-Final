@@ -104,6 +104,11 @@ main.main {
 
 @media screen and (max-width: 480px) {
 
+  .flex{
+    display: flex;
+    flex-direction: column;
+  }
+
   .thumbnails {
     display: block;
   }
