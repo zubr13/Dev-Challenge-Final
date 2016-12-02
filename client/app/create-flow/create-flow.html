@@ -1,0 +1,16 @@
+<div>
+	<label for="">Name of flow</label>
+	<input type="text" ng-model="createFlowCtrl.name">
+</div>
+
+<div>
+	<label for="">Description</label>
+	<input type="text" ng-model="createFlowCtrl.description">
+</div>
+
+<div>
+	<label for="">Private?</label>
+	<input type="checkbox" ng-model="createFlowCtrl.private">
+</div>
+
+<button ng-click='createFlowCtrl.createFlow()'>Create</button>

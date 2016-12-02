@@ -1,7 +1,7 @@
 <div id="chat-block" class="chat">
   <h1>Chat</h1>
   <div class="message" ng-repeat="message in $ctrl.messages">
-    <span class="name">{{message.author}}</span>&nbsp;<span class="date">{{message.date}}</span>
+    <span class="name">{{message.author}}</span>&nbsp;<span class="date">{{message.date | date: "yyyy-MM-dd, HH:mm:ss"}}</span>
     <p class="message">{{message.message}}</p>
   </div>
 </div>
