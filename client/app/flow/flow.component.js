@@ -26,11 +26,12 @@ export class FlowComponent {
   }
 
   createEvent() {
-    console.log(this.$stateParams.id);
+    this.showEventForm = false;
     this.flow.events.push(this.event);
     this.flowService.createEvent(this.$stateParams.id, this.flow).then(flow => {
       return;
     })
+    this.event = {};
   }
 
   getShowEventForm() {
