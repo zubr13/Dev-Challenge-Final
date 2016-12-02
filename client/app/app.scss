@@ -118,14 +118,3 @@ header .avatar img {
   }
 
 }
-
-
-// Component styles are injected through gulp
-/* inject:scss */
-@import 'admin/admin';
-@import 'chat/chat.component';
-@import 'main/main';
-@import '../components/footer/footer';
-@import '../components/modal/modal';
-@import '../components/oauth-buttons/oauth-buttons';
-/* endinject */
