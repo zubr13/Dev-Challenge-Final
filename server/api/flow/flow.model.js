@@ -6,6 +6,7 @@ var FlowSchema = new mongoose.Schema({
   name: String,
   description: String,
   private: Boolean,
+  img: String,
   delete: Boolean,
   users: [String],
   msg: [{
@@ -14,12 +15,13 @@ var FlowSchema = new mongoose.Schema({
     date: Date
   }],
   events: [{
+    name: String,
+    description: String,
     date: Date,
     place: String,
     price: String,
     img: String,
-    hashtags: String,
-    
+    hashtags: [String]
   }]
 });
 
