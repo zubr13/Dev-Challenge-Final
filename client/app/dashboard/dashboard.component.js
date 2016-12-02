@@ -10,10 +10,13 @@ export class DashboardComponent {
   constructor(flowService) {
     this.flows = {};
     this.flowService = flowService;
+    this.getFlow();
   }
-  
   getFlow() {
-
+    this.flowService.getFlows().then(flows => {
+      this.flows = flows;
+      console.log(this.flows);
+    });
   }
 }
 
