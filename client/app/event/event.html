@@ -11,7 +11,9 @@
       <!--<span class="hashtags" ng-repeat="tag in eventCtrl.event.hashtags">
           #{{tag}}
       </span>-->
-        <button class="btn btn-inverse btn-lg btn-login" ng-click='eventCtrl.goToEvent()'>Go!</button>
+        <h1 ng-if="eventCtrl.onEvent === true">You signed to event</h1>
+        <button ng-if="eventCtrl.onEvent === false" class="btn btn-inverse btn-lg btn-login" ng-click='eventCtrl.goToEvent()'>Go!</button>
+
     </div>
   </div>
 </div>

@@ -11,6 +11,7 @@ export class EventComponent {
     this.event = {};
     this.Auth = Auth;
     this.flow = {};
+    this.onEvent = false;
     this.user = Auth.getCurrentUserSync();
     this.flowService = flowService;
     this.$stateParams = $stateParams;
@@ -18,8 +19,10 @@ export class EventComponent {
   }
 
   goToEvent() {
-    console.log(this.flow, this.event, this.user)
-    this.flowService.saveEventSign(this.event, this.user);
+    // console.log(this.flow._id, this.event, this.user._id);
+    this.event.users.push(this.user._id);
+    this.flow.events.push(this.event);
+    this.flowService.saveEventSign(this.flow);
   }
 
   getFlows() {
@@ -30,7 +33,9 @@ export class EventComponent {
         flow.events.map(event => {
         if(event._id === this.$stateParams.id) {
           this.event = event;
-          console.log(this.user);
+          if(event.users.includes(this.user._id))
+            this.onEvent = true;
+          //  console.log(this.user._id);
         }
       })});
     });
