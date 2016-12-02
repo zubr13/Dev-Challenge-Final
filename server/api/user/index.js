@@ -8,9 +8,9 @@ var router = new Router();
 
 router.get('/', controller.index);
 router.delete('/:id', auth.hasRole('admin'), controller.destroy);
-router.get('/me', controller.me);
+router.get('/me', auth.isAuthenticated(), controller.me);
 router.put('/:id/password', auth.isAuthenticated(), controller.changePassword);
-router.get('/:id', controller.show);
+router.get('/:id', auth.isAuthenticated(), controller.show);
 router.post('/', controller.create);
 // auth.isAuthenticated()
 module.exports = router;

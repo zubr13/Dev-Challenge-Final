@@ -27,4 +27,13 @@ export default class FlowService {
 		return this.$http.put(`${API_URL}/flows/${flow._id}`, flow)
 		.then(response => response.data);
 	}
+
+	// saveEventSign(event, user) {
+	// 	this.$http.get(`${API_URL}/flows`)
+	// 	.then(flows => flows.map(flow => flow.events.map(events => {
+	// 		if(events.id === event.id) {
+
+	// 		}
+	// 	})))
+	// }
 }

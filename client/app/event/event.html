@@ -8,9 +8,10 @@
       <h3>Date: {{eventCtrl.event.date}}</h3>
       <h3>Place: {{eventCtrl.event.place}}</h3>
       <h3>Price: {{eventCtrl.event.price}}</h3>
-      <div ng-repeat="tag in eventCtrl.event.hashtags>
-          {{tag}}
-      </div>
+      <!--<span class="hashtags" ng-repeat="tag in eventCtrl.event.hashtags">
+          #{{tag}}
+      </span>-->
+        <button class="btn btn-inverse btn-lg btn-login" ng-click='eventCtrl.signToEvent()'>Go!</button>
     </div>
   </div>
 </div>
