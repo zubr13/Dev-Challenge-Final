@@ -6,8 +6,37 @@
       <img ng-src="{{flowCtrl.flow.img}}" alt="">
       <h2>{{flowCtrl.flow.description}}</h2>
       <h3>Private: {{flowCtrl.flow.private ? 'Yes' : 'No'}}</h3>
-      <button class="btn btn-small">Create event</button>
+          <button class="btn btn-small" ng-click="flowCtrl.getShowEventForm()">Create event</button>
+
     </div>
     <chat flow="flowCtrl.flow"></chat>
+  </div>
+  <div class="container-fluid" ng-if="flowCtrl.showEventForm">
+  <div>
+    <label for="name">Name of event</label><br><br>
+    <input type="text" ng-model="flowCtrl.event.name" id="name">
+  </div>
+  <div>
+    <label for="descript">Description</label><br><br>
+    <input type="text" ng-model="flowCtrl.event.description" id="descript">
+  </div>
+    <div>
+    <label for="date">Date</label><br><br>
+    <input type="text" ng-model="flowCtrl.event.date" id="date">
+  </div>
+      <div>
+    <label for="place">Place</label><br><br>
+    <input type="text" ng-model="flowCtrl.event.place" id="place">
+  </div>
+      <div>
+    <label for="price">Price</label><br><br>
+    <input type="text" ng-model="flowCtrl.event.price" id="price">
+  </div>
+  <br>
+  <div>
+    <label for="img">Image url</label><br><br>
+    <input type="text" ng-model="flowCtrl.event.img" id="img">
+  </div>
+      <button class="btn btn-small" ng-click="flowCtrl.createEvent()">Create event</button>
   </div>
 </div>
