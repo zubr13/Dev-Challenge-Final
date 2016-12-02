@@ -33,6 +33,11 @@ input[type='email'], input[type='password'], input[type='text'] {
   padding: 0 10px;
 }
 
+.user{
+  display: inline-block;
+  width: 100px;
+}
+
 @import "main/main";
 @import "chat/chat.component";
 @import "flow/flow";

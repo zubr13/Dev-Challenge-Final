@@ -67,7 +67,7 @@ Flow.find({}).remove()
       private: false,
       img: 'http://javahero.ru/wp-content/uploads/2016/06/500628_a962.jpg',
       delete: false,
-      users: ['Admin', 'Vasya Pupkin'],
+      users: ['Vova', 'Vasya Pupkin'],
       msg: [{
         user: '',
         msg: 'Hello everyone'
@@ -100,7 +100,7 @@ Flow.find({}).remove()
       private: false,
       img: 'http://react-etc.net/files/2016-07/logo-578x270.png',
       delete: false,
-      users: ['Admin', 'Vasya Pupkin'],
+      users: ['Vova', 'Vasya Pupkin'],
       msg: [{
         user: '',
         msg: 'Hello everyone'
@@ -119,7 +119,7 @@ Flow.find({}).remove()
       img: 'https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/07/1436439824nodejs-logo.png',
       private: false,
       delete: false,
-      users: ['Admin', 'Vasya Pupkin'],
+      users: ['Vova', 'Vasya Pupkin'],
       msg: [{
         user: '',
         msg: 'Hello everyone'
@@ -138,7 +138,7 @@ Flow.find({}).remove()
       private: false,
       delete: false,
       img: 'https://www.planet-source-code.com/vb/2010Redesign/images/LangugeHomePages/HTML5_CSS_JavaScript.png',
-      users: ['Admin', 'Vasya Pupkin'],
+      users: ['Vova', 'Vasya Pupkin'],
       msg: [{
         user: '',
         msg: 'Hello everyone'
@@ -157,7 +157,7 @@ Flow.find({}).remove()
       private: false,
       img: 'http://javahero.ru/wp-content/uploads/2016/06/500628_a962.jpg',
       delete: false,
-      users: ['Admin', 'Vasya Pupkin'],
+      users: ['Vova', 'Vasya Pupkin'],
       msg: [{
         user: '',
         msg: 'Hello everyone'
@@ -174,7 +174,7 @@ Flow.find({}).remove()
       private: false,
       img: 'http://react-etc.net/files/2016-07/logo-578x270.png',
       delete: false,
-      users: ['Admin', 'Vasya Pupkin'],
+      users: ['Vova', 'Vasya Pupkin'],
       msg: [{
         user: '',
         msg: 'Hello everyone'
@@ -191,7 +191,7 @@ Flow.find({}).remove()
       img: 'https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/07/1436439824nodejs-logo.png',
       private: false,
       delete: false,
-      users: ['Admin', 'Vasya Pupkin'],
+      users: ['Petya', 'Vasya Pupkin'],
       msg: [{
         user: 'Admin',
         msg: 'Hello everyone'
@@ -209,7 +209,7 @@ Flow.find({}).remove()
       private: false,
       delete: false,
       img: 'https://www.planet-source-code.com/vb/2010Redesign/images/LangugeHomePages/HTML5_CSS_JavaScript.png',
-      users: ['Admin', 'Vasya Pupkin'],
+      users: ['Vova', 'Vasya Pupkin'],
       msg: [{
         user: '',
         msg: 'Hello everyone'

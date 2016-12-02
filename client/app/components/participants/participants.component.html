@@ -1,1 +1,4 @@
-<h1>Participants</h1>
+<div class="user" ng-repeat='participant in $ctrl.participants'>
+	<img src="https://cdn3.iconfinder.com/data/icons/gray-user-toolbar/512/manager-512.png">
+	<h3>{{participant.name || participant}}</h3>
+</div>
