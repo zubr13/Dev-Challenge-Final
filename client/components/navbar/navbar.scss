@@ -37,7 +37,6 @@ li{
   display: flex;
   flex-direction: row;
   line-height: 50px;
-  width: 40%;
   justify-content: space-between;
 }
 
@@ -45,6 +44,9 @@ li{
   height: 30px;
 }
 
+.auth p{
+  margin-right: 10px;
+}
 li{
   margin: 0;
 }
