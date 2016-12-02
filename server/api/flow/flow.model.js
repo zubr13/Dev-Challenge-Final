@@ -12,6 +12,12 @@ var FlowSchema = new mongoose.Schema({
     user: String,
     msg: String,
     date: Date
+  }],
+  events: [{
+    date: Date,
+    place: String,
+    price: String,
+    img: String
   }]
 });
 
