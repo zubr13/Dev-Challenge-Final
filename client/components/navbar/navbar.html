@@ -14,8 +14,6 @@
         <button class="btn" ng-hide="$ctrl.isLoggedIn()" ui-sref="signup">Sign up</button>
         <button class="btn" ng-hide="$ctrl.isLoggedIn()" ui-sref="login">Login</button>
         <li ng-show="$ctrl.isLoggedIn()"><p class="navbar-text">Hello {{ $ctrl.getCurrentUser().name }}</p></li>
-        <li ng-show="$ctrl.isLoggedIn()" ui-sref-active="active"><a ui-sref="settings"><span
-          class="glyphicon glyphicon-cog"></span></a></li>
         <button ui-sref="dashboard" class="btn">events</button>
         <li ng-show="$ctrl.isLoggedIn()"><a class="btn" ui-sref="logout">Logout</a></li>
       </div>
