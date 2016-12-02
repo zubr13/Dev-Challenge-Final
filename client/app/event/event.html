@@ -1,9 +1,16 @@
-<div>
-    {{eventCtrl.event.img}}
-    {{eventCtrl.event.name}}
-    {{eventCtrl.event.description}}
-    {{eventCtrl.event.date}}
-    {{eventCtrl.event.place}}
-    {{eventCtrl.event.price}}
-    {{eventCtrl.event.hashtags}}
+
+<div class="container">
+  <h1>{{eventCtrl.event.name}}</h1>
+  <div class="flex">
+    <div class="flex-column">
+        <img ng-src="{{eventCtrl.event.img}}" alt="" height="300">
+      <h2>{{eventCtrl.event.description}}</h2>
+      <h3>Date: {{eventCtrl.event.date}}</h3>
+      <h3>Place: {{eventCtrl.event.place}}</h3>
+      <h3>Price: {{eventCtrl.event.price}}</h3>
+      <div ng-repeat="tag in eventCtrl.event.hashtags>
+          {{tag}}
+      </div>
+    </div>
+  </div>
 </div>
