@@ -29,12 +29,13 @@ import socket from '../components/socket/socket.service';
 import createFlow from './create-flow/create-flow.component';
 import flow from './flow/flow.component';
 import dashboard from './dashboard/dashboard.component';
+import event from './event/event.component';
 import flowService from './flow.service';
 import './app.scss';
 
 angular.module('devchallengeApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
     uiBootstrap, _Auth, account, admin, navbar, footer, main, constants, socket, util, createFlow, flow,
-    dashboard
+    dashboard, event
   ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
