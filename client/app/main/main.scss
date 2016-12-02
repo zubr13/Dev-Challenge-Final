@@ -21,6 +21,7 @@ header .avatar img {
   flex-direction: row;
   position: relative;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .thumbnails a {
@@ -41,7 +42,6 @@ header .avatar img {
 
 .thumbnails a img {
   display: block;
-  height: 200px;
   width: 100%;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
