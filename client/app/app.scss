@@ -1,11 +1,42 @@
 @import "../sass/core";
 
-body{
+body {
   background: url("../images/bg.jpg") top center;
   background-size: cover;
 }
 
+.auth {
+  float: right;
+}
+
+.logo {
+  display: block;
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+input[type='email'], input[type='password'] {
+  width: 100%;
+  @include border-radius(4px);
+  border: 1px solid;
+  transition: all 0.2s ease;
+  margin: 0 0 2em 0;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.075);
+  outline: 0;
+  resize: none;
+  overflow: auto;
+  opacity: 0.8;
+  color: white;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
 
 @import "main/main";
 @import "chat/chat.component";
 @import "flow/flow";
+@import "create-flow/create-flow";
+@import "dashboard/dashboard";
+@import "../components/navbar/navbar";
+
