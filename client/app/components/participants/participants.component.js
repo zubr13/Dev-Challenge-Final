@@ -6,6 +6,11 @@ export class participantsComponent {
   constructor() {
     this.message = 'World';
   }
+
+  addParticipant(){
+    this.participants.push({name: this.user});
+    this.user = "";
+  }
 }
 
 export default angular.module('devChallengeFinalApp.participants', [])
