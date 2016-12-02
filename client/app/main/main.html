@@ -1,7 +1,8 @@
 <header class="container-fluid">
-  <a href="#"><span class="avatar"><img src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-tech-guy.png"> </span></a><br>
+  <a ui-sref="#"><span class="avatar"><img src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-tech-guy.png"> </span></a><br>
   <button class="btn" ui-sref='create-flow'>CREATE NEW ROOM</button>
 </header>
+<h1 class="container-fluid">ROOMS</h1>
 <section class="thumbnails container">
   <div ng-repeat='flow in $ctrl.flows'>
     <a ui-sref='flow({id: flow._id})'>
