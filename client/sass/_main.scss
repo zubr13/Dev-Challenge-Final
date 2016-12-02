@@ -1,0 +1,122 @@
+@import "variables";
+
+body {
+  padding-top: $header-height;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $gray-dark;
+  background-color: $body-bg-base;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 5px 15px;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+  outline: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  @include border-radius(2px);
+  transition: all 0.2s ease;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.block {
+  display: block;
+}
+
+strong, b {
+  color: #ffffff;
+  font-weight: 200;
+}
+
+em, i {
+  font-style: italic;
+}
+
+p {
+  margin: 0 0 2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 200;
+  line-height: 1.5;
+  margin: 0 0 1em 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 980px) {
+
+  h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
+    display: none;
+  }
+
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+@media screen and (max-width: 980px) {
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+}
+
+@media screen and (max-width: 736px) {
+
+  h1 {
+    font-size: 1.25em;
+  }
+
+}
+
+h2 {
+  font-size: 1.35em;
+}
+
+@media screen and (max-width: 736px) {
+
+  h2 {
+    font-size: 1em;
+  }
+
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.9em;
+}
+
+h6 {
+  font-size: 0.7em;
+}
+
+a{
+  text-decoration: none;
+}
