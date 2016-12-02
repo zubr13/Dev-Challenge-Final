@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import routing from './main.routes';
+import chat from '../chat/chat.component';
 
 export class MainController {
 
@@ -36,7 +37,7 @@ export class MainController {
   }
 }
 
-export default angular.module('devchallengeApp.main', [uiRouter])
+export default angular.module('devchallengeApp.main', [uiRouter, chat])
   .config(routing)
   .component('main', {
     template: require('./main.html'),
