@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 
 var FlowSchema = new mongoose.Schema({
   name: String,
-  info: String,
+  description: String,
   private: Boolean,
   delete: Boolean,
   users: [String],
@@ -17,7 +17,9 @@ var FlowSchema = new mongoose.Schema({
     date: Date,
     place: String,
     price: String,
-    img: String
+    img: String,
+    hashtags: String,
+    
   }]
 });
 
